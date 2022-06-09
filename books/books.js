@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 require("./Book");
 const Book = mongoose.model("Book")
 
-mongoose.connect("mongodb+srv://Kunal:QUStbuTfQSxM4TLC@cluster1.ia3gg.mongodb.net/?retryWrites=true&w=majority", () => {
+mongoose.connect(mongodb_cred, () => {
     console.log("Database is connected!");
 })
 

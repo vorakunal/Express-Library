@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 require("./Customer");
 const Customer = mongoose.model("Customer")
 
-mongoose.connect("mongodb+srv://Kunal:QUStbuTfQSxM4TLC@cluster1.ia3gg.mongodb.net/?retryWrites=true&w=majority", () => {
+mongoose.connect(mongodb_cred, () => {
     console.log("Database is connected!");
 })
 

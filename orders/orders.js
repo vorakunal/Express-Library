@@ -10,7 +10,7 @@ const mongoose = require("mongoose");
 require("./Order");
 const Order = mongoose.model("Order")
 
-mongoose.connect("mongodb+srv://Kunal:QUStbuTfQSxM4TLC@cluster1.ia3gg.mongodb.net/?retryWrites=true&w=majority", () => {
+mongoose.connect(mongodb_cred, () => {
     console.log("Database is connected!");
 })
 
